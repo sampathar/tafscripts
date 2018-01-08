@@ -1,4 +1,4 @@
-package com.autorabit.templates;
+package com.autorabit.tests;
 
 import static org.junit.Assert.fail;
 
@@ -36,7 +36,7 @@ public class BasicValidation {
 				path = path + part + File.separator;
 			}
 		}
-		driver= recorderObj.Browser("autorabit.com-7sfUvY",this.getClass().getSimpleName(),path);
+		driver= recorderObj.Browser("wellsfargo.com",this.getClass().getSimpleName(),path);
 		recorderObj.setDriver(driver);
 		driver.manage().window().maximize();
 		baseUrl = "https://login.salesforce.com/";
